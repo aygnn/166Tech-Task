@@ -1,0 +1,229 @@
+
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .navbarr {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+  
+    .navi {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 71%;
+    }
+  
+    label #btn,
+    label #cancel {
+      color: black;
+      font-size: 30px;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+  
+    #check {
+      display: none;
+    }
+  
+    .logoo {
+      img {
+        width: 95px;
+        height: 42px;
+        position: absolute;
+        top: 17px;
+        left: 12%;
+      }
+    }
+  
+    .list {
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+  
+        li {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+  
+          select {
+            border: 0;
+            font-size: 16px;
+            font-weight: 500;
+          }
+  
+          a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+  
+            &:before {
+              position: absolute;
+              padding: 1.5px 0;
+              content: '';
+              left: 0;
+              bottom: 0;
+              height: 3px;
+              width: 100%;
+              background: black;
+              transform: scaleX(0);
+              transform-origin: right;
+              transition: transform .4s linear;
+            }
+  
+            &:hover:before {
+              transform: scaleX(1);
+              transform-origin: left;
+            }
+          }
+        }
+      }
+    }
+  
+    .buttons {
+      display: flex;
+      gap: 13px;
+  
+      .daxil_ol {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        width: 102px;
+        height: 44px;
+        border-radius: 12px;
+        padding: 10px 20px;
+        gap: 10px;
+        color: black;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 1);
+      }
+  
+      .qeyd {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        width: 121px;
+        height: 44px;
+        border-radius: 12px;
+        padding: 10px 20px;
+        border: 1px;
+        gap: 10px;
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+  
+  #root {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: initial;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  @media (max-width: 1179px) {
+    .navbarr {
+
+      .logoo img {
+        left: 8%;
+      }
+      .list{
+        ul{
+          gap: 21px !important;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 944px) {
+    .navbarr .logoo img {
+      left: 6%;
+      top: 20px;
+      width: 130px;
+    }
+    .navbarr ul li a {
+      font-size: 17px;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .navbarr label #btn {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 21px;
+    }
+  
+    .navbarr .navi {
+      position: fixed;
+      flex-direction: column-reverse;
+      z-index: 5;
+      width: 100%;
+      background-color: white;
+      top: 80px;
+      height: 100vh;
+
+      left: -100%;
+      transition: all .5s;
+      text-align: center;
+  
+      ul {
+        flex-direction: column;
+        gap: 6px;
+        padding: 0;
+  
+        li {
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+  
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+  
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 29px;
+  
+        .daxil_ol {
+          width: 221px;
+        }
+  
+        .qeyd {
+          width: 221px;
+        }
+      }
+    }
+  
+    #check:checked ~ #navi {
+      left: 0;
+    }
+
+  
+    #check:checked ~ label #btn {
+      display: none;
+    }
+  
+    #check:checked ~ label #cancel {
+      display: block;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 23px;
+    }
+  }
+  

@@ -1,0 +1,402 @@
+.part1{
+    .sectionn1{
+        background-color: black;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 7%;
+        .texts{
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            color: white;
+            .uc_sinif{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 54px;
+            }
+            ul{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                li{
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: rgba(255, 255, 255, 1);
+                    
+                }
+            }
+            .buton {
+                button {
+                    display: flex;
+                    align-items: center;
+                  width: 183px;
+                  height: 44px;
+                  border-radius: 12px;
+                  // border: 1px;
+                  padding: 10px 20px 10px 20px;
+                  color: black;
+                  background-color: white;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+              
+              
+            }
+            .sekil{
+              img{
+                  width: 457px;
+                  height: 457px
+              }
+            }
+    }
+    .sectionn2{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 74px;
+        padding-bottom: 78px;
+        .bolme1{
+            gap: 13px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 32px;
+            width: 683px;
+            height: 388px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+            background: rgba(250, 250, 250, 1);
+
+            .melumat{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .tarix {
+                display: flex;
+                justify-content: space-around;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                gap: 16px;
+              p {
+                color: rgba(0, 0, 0, 0.8);
+                margin: 0;
+              }
+              .time{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+              .star{
+                display: flex;
+                align-items: center;
+                gap: 11px;
+              }
+            }
+            .suallar {
+              margin-top: 11px;
+              p {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+              }
+              ul {
+                li {
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 28px;
+                  color: rgba(0, 0, 0, 0.8);
+                }
+              }
+            }
+        }
+        .bolme2{
+            padding: 32px;
+            width: 492px;
+            height: 388px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+            background: rgba(250, 250, 250, 1);
+
+            .netice{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+                margin-left: 19px;
+            }
+            .siralar{
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+                margin-top: 7px;
+                p{
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .sira{
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 83px;
+
+                    .ad{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                }
+                .sira:hover{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .reyler{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+    }
+    .sectionn3{
+        margin-bottom: 76px;
+        margin-top: 38px;
+
+        display: flex;
+    justify-content: center;
+        .karticka{
+            cursor: pointer;
+            width: 100%;
+            height: 254px;
+            box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+            background: rgba(250, 250, 250, 1);
+            display: flex;
+            padding-top: 44px;
+            padding-left: 44px;
+            gap: 9%;
+
+
+            p{
+               margin:0; 
+            }
+            .puan{
+                .p{
+                    font-weight: 500;
+                    font-size: 64px;
+                    line-height: 78px;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+
+    .sectionn4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        .cart{
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 373px;
+            height: 188px;
+            border-radius: 12px;
+            background: rgba(250, 250, 250, 1);
+            padding: 23px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            margin-bottom: 20px;
+
+            .name{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .ulduz{
+                display: flex;
+                gap: 17px;
+                img{
+                    width: 88px;
+                    height: 16px;
+                }
+                p{
+                    margin: 0;
+                    color: rgba(0, 0, 0, 0.6);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+
+                }
+            }
+            .yazilar{
+                color: rgba(0, 0, 0, 0.6);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+
+            }
+
+        }
+        .cart:hover{
+            transform: scale(1.02);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .sectionn2{
+        .bolme1{
+    
+        }
+        .bolme2{
+            .siralar{
+                gap: 6px !important;
+                .sira{
+                    gap: 10px !important;
+                }
+            }
+        }
+       }
+       .sectionn3{
+        .karticka{
+            .ulduzlar{
+                img{
+                    width: 440px !important;
+                }
+            }
+        }
+       }
+       .sectionn4{
+        justify-content: center !important;
+       }
+  }
+
+
+@media (max-width: 860px) {
+   .sectionn1{
+    gap: 0;
+    .texts{
+        gap: 0 !important;
+        align-items: center;
+        .uc_sinif{
+            text-align: center;
+            font-size: 20px !important;
+            line-height: 36px !important;
+        }
+    }
+   }
+   .sectionn2{
+    flex-direction: column;
+    align-items: center;
+  gap: 30px;
+  .bolme1{
+    width: 506px !important;
+  }
+   }
+   .sectionn3{
+    .karticka{
+        .ulduzlar{
+            img{
+                width: 416px;
+            }
+        }
+    }
+   }
+   .sectionn4{
+    justify-content: center !important;
+   }
+ 
+  }
+
+  @media (max-width: 768px) {
+    .sectionn1{
+        flex-direction: column;
+        justify-content: flex-start;
+     .texts{
+        position: absolute;
+        top: 87px;
+         .uc_sinif{
+             text-align: center;
+             font-size: 20px !important;
+             line-height: 36px !important;
+         }
+     }
+    }
+
+    .sectionn3{
+     .karticka{
+        padding-top: 0 !important;
+        flex-direction: column;
+    align-items: center;
+        .puan{
+            .p{
+                font-size: 42px !important;
+            }
+            div{
+                margin-top: 0 !important;
+            }
+        }
+         .ulduzlar{
+             img{
+                 width: 316px;
+             }
+         }
+     }
+    }
+ 
+  
+   }
+
+   @media (max-width: 535px) {
+    .sectionn1{
+        .sekil{
+            margin-top: 33%;
+
+            img{
+                width: 331px !important;
+                height: 412px !important;
+            }
+        }
+    }
+
+    .sectionn2{
+     flex-direction: column;
+     align-items: center;
+   gap: 30px;
+   .bolme1{
+     width: 342px !important;
+   }
+   .bolme2{
+    width: 342px !important;
+   }
+    }
+    .sectionn3{
+     .karticka{
+         .ulduzlar{
+             img{
+                 width: 240px !important;
+             }
+         }
+     }
+    }
+
+  
+   }
+ 
